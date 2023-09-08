@@ -22,7 +22,8 @@
 >1、url：http://192.168.204.99:8000/trend/event_id/predict_length/cv|pv
 > * 注：event_id，即广告的id；predict_length，即预测长度；cv|pv表示cv和pv二选一；  
 >如http://192.168.204.99:8000/trend/44/2/pv；44为广告id，2表示可以预测后两天的  
->2、返回的格式  
+>
+> 2、返回的格式
 > * (1)正确返回：{'code': 200, 'data': [{'day': 'yyyy-mm-dd', 'trend': xxx}, {'day': 'yyyy-mm-dd', 'trend': xxx}]}  
 > * (2)错误返回：  
 >   * ①{'code': 428, 'msg': '数据量不足！'}  
